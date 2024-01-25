@@ -1,4 +1,5 @@
-document.getElementById('myForm').addEventListener('Submit', function(e){
+
+document.getElementById('myForm').addEventListener('submit', function(e){
   e.preventDefault();
 
   const Username = document.getElementById('name').value;
@@ -15,12 +16,13 @@ document.getElementById('myForm').addEventListener('Submit', function(e){
       return;
   }
 
-  if(!isValidPassword(password)){
-      window.alert('password msust be at least 8 characters long,must have at least 1 alphabet and at least one special character');
-      return;
-  }
+  // if(!isValidPassword(password)){
+  //     window.alert('password msust be at least 8 characters long,must have at least 1 alphabet and at least one special character');
+  //     return;
+  // }
 
   alert('Form sbumitted successfully');
+  
 });
 
 function isEmpty(str){
